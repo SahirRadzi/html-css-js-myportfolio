@@ -25,3 +25,9 @@ function RepoWarnakala() {
   // Open new tab
   window.open("https://github.com/SahirRadzi/warnakala-web", "_blank");
 }
+
+// Button Contact
+function contactWasap() {
+  // Open new tab
+  window.open("https://wa.me/+601133165639?text=Hai%20Sahir%20Radzi...%20Web%20Developer?", "_blank");
+}
