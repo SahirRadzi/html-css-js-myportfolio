@@ -5,6 +5,12 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
+  --gray-color: rgb(219, 219, 219);
+  --css-color: #800080;
+  --html5-color: #ff4500;
+  --javascript-color: #ffff00;
+  --laravel-color: #ff1717;
+  --filamentphp-color: #ffa500;
 }
 
 * {
@@ -191,4 +197,171 @@ section {
 
 .socials i:hover {
   transform: scale(1.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.experience-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.experience img {
+  width: 30vw;
+  border: 2px solid var(--black-color);
+  border-radius: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid-card {
+  border: 2px solid var(--black-color);
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.02);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.grid-card i {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid-card span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  border: 2px solid var(--black-color);
+  border-radius: 3rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transform: translateY(-10px) scale(1.02);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.project-card .btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card .btn-group-tech {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card .btn-group-tech .btn-html5 {
+  padding: 10px;
+  color: var(--black-color);
+  background-color: var(--html5-color);
+  border-radius: 20px;
+}
+
+.project-card .btn-group-tech .btn-css {
+  padding: 10px;
+  color: var(--black-color);
+  background-color: var(--css-color);
+  border-radius: 20px;
+}
+
+.project-card .btn-group-tech .btn-javascript {
+  padding: 10px;
+  color: var(--black-color);
+  background-color: var(--javascript-color);
+  border-radius: 20px;
+}
+
+.project-card .btn-group-tech .btn-laravel {
+  padding: 10px;
+  color: var(--white-color);
+  background-color: var(--laravel-color);
+  border-radius: 20px;
+}
+
+.project-card .btn-group-tech .btn-filamentphp {
+  padding: 10px;
+  color: var(--white-color);
+  background-color: var(--filamentphp-color);
+  border-radius: 20px;
+}
+
+.project-card .btn-group .btn {
+  padding: 10px;
+  border: 2px solid var(--black-color);
+  border-radius: 20px;
+}
+
+.project-card:hover .btn {
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.project-card:hover .btn:hover {
+  border: 2px solid var(--white-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
 }
