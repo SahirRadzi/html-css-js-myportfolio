@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script type="text/javascript" src="darkmode.js"></script>
+
+    <style>
+      .darkmode-btn {
+        position: absolute;
+        padding: 0;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
   </head>
   <body>
+    <!-- <button class="darkmode-btn" onclick="myDarkmode()">
+      <span>darkmode</span>
+    </button> -->
+
     <header class="header">
       <a href="#" class="logo"><span>Sahir Radzi</span></a>
 
@@ -40,7 +54,9 @@
         <div class="info-box">
           <div class="text">
             <h3>Hai, I'm</h3>
+
             <h1>Sahir Radzi</h1>
+
             <span>Web Developer (Backend)</span>
           </div>
 
@@ -165,5 +181,12 @@
     <script src="app.js"></script>
 
     <script src="visitg.js"></script>
+
+    <!-- <script>
+      function myDarkmode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+      }
+    </script> -->
   </body>
 </html>
