@@ -149,8 +149,8 @@
             <div class="btn-filamentphp">FILAMENTPHP</div>
           </div>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <div class="btn" onclick="errorLiveDemo()">Live Demo</div>
+            <div class="btn" onclick="errorRepo()">Github Repo</div>
           </div>
         </div>
       </div>
@@ -188,5 +188,15 @@
         element.classList.toggle("darkmode");
       }
     </script> -->
+
+    <script>
+      function errorLiveDemo() {
+        alert("Sorry, I'm not live...cause on progress development");
+      }
+
+      function errorRepo() {
+        alert("Sorry, no repo.");
+      }
+    </script>
   </body>
 </html>
