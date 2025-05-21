@@ -177,10 +177,27 @@ section {
   gap: 5rem;
 }
 
-.about img {
-  width: 30vw;
+/* .about img {
+  width: 15vw;
   border-radius: 20px;
   border: var(--black-color) solid 2px;
+} */
+
+.about .logo-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.logo-box img {
+  width: 9vw;
+  border-radius: none;
+  cursor: pointer;
+  transition: 3s, ease-in-out;
+}
+
+.logo-box img:hover {
+  transform: scale(1.5);
 }
 
 .info-box {
@@ -514,6 +531,9 @@ footer ul li a {
   .input-box {
     font-size: 2.5rem;
   }
+  .logo-box img {
+    width: 30vw;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -557,6 +577,9 @@ footer ul li a {
   .input-box .btn-submit {
     font-size: 1.5rem;
   }
+  .logo-box img {
+    width: 30vw;
+  }
 }
 @media (max-width: 600px) {
   .nav-links {
@@ -599,5 +622,9 @@ footer ul li a {
   }
   .about-container img {
     width: 60vw;
+  }
+
+  .logo-box img {
+    width: 30vw;
   }
 }
